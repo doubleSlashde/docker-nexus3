@@ -10,6 +10,8 @@ ENV JAVA_VERSION_MAJOR 8
 ENV JAVA_VERSION_MINOR 102
 ENV JAVA_VERSION_BUILD 14
 
+RUN yum update -y
+
 RUN yum install -y \
   curl tar \
   && yum clean all
