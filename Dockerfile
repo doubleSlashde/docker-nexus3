@@ -46,8 +46,13 @@ RUN sed \
 RUN useradd -r -u 200 -m -c "nexus role account" -d ${NEXUS_DATA} -s /bin/false nexus
 
 VOLUME ${NEXUS_DATA}
-
+## Gui Port
 EXPOSE 8081
+
+## Docker Registry Ports
+EXPOSE 18444
+EXPOSE 18443
+
 USER nexus
 WORKDIR /opt/sonatype/nexus
 
