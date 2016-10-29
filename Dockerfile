@@ -1,4 +1,4 @@
-FROM       centos7
+FROM       centos:centos7
 MAINTAINER Sonatype <cloud-ops@sonatype.com>
 
 ENV NEXUS_DATA /nexus-data
