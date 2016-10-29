@@ -1,4 +1,4 @@
-FROM       rhel7:latest
+FROM       rhel7
 MAINTAINER Sonatype <cloud-ops@sonatype.com>
 
 ENV NEXUS_DATA /nexus-data
