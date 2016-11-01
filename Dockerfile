@@ -1,4 +1,4 @@
-FROM       rhel7
+FROM       registry.access.redhat.com/rhel7:latest
 MAINTAINER Sonatype <cloud-ops@sonatype.com>
 
 ENV NEXUS_DATA /nexus-data
