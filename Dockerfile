@@ -53,10 +53,8 @@ RUN useradd -r -u 200 -m -c "nexus role account" -d ${NEXUS_DATA} -s /bin/false 
 
 VOLUME ${NEXUS_DATA}
 
-EXPOSE 8081
-## Docker Registry Ports
-EXPOSE 18444
-EXPOSE 18443
+EXPOSE 8081 18443 18444
+
 USER nexus
 WORKDIR ${NEXUS_HOME}
 
